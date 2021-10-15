@@ -1,0 +1,40 @@
+table {
+    font-family: cursive;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+
+thead {
+    background-color: #d4b889;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+.item_menuP {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.link_menuP {
+    color: black;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.item_menuP :hover {
+    color: crimson;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    font-family: cursive;
+    margin-left: 2%;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,74 @@
+.img_capa {
+    width: 100%;
+}
+
+.titulo {
+    font-size: 30px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 40px;
+    margin-left: 100px;
+}
+
+form label,
+form legend {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 20px;
+    display: block;
+}
+
+form select {
+    width: 20%;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+form :placeholder-shown {
+    font-size: 15px;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+.input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+fieldset {
+    border: 1px black;
+    border-style: groove;
+    width: 80%;
+}
+
+.botao {
+    width: 200px;
+}
+
+.enviar {
+    display: block;
+    width: 40%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: #8D2B1D;
+    border-color: #8D2B1D;
+    transition: 0.2s;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.enviar:hover {
+    background-color: #EDAE2A;
+    border-color: #EDAE2A;
+    color: black;
+}

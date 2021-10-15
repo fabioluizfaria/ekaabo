@@ -1,0 +1,35 @@
+extends layout 
+ 
+block links
+  link(href='/publico/css/contato.css' rel='stylesheet')
+ 
+ 
+block principal
+  img.img_capa(src="/publico/imgs/capa_contato.png")
+  br
+  br
+  h1.titulo Entre em contato com a gente!
+  br
+  form
+    label(for="NomeCompleto") Nome Completo
+    input.input#nome(type="text", required)
+    label(for="DataNascimento") Data de Nascimento
+    input.input#dataNascimento(type="date", required)
+    label(for="email") Email
+    input.input#email(type="email", required, placeholder="seuemail@dominio.com")
+    label(for="Telefone") Telefone
+    input.input#telefone(type="tel", required, placeholder="(XX) XXXXX-XXXX")
+    br
+    fieldset
+      legend Qual o tema do contato?
+      select.botao
+        option Selecione
+        option Sugestão
+        option Relato Pessoal
+    br
+    label(for="mensagem") Mensagem
+    textarea#mensagem(cols="80", rows="10", required)  
+    input.enviar(type="submit", value="Enviar formulário")
+  br
+  br
+      
