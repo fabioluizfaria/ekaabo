@@ -1,0 +1,20 @@
+.titulo {
+    font-size: 30px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 22px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    text-align: justify;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.texto {
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 80px;
+    margin-right: 80px;
+}

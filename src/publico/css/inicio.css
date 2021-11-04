@@ -1,3 +1,32 @@
-.img_capa {
-    width: 100%;
+.imgCarousel {
+    object-fit: contain;
+}
+
+.titulo {
+    font-size: 30px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 22px;
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+.texto {
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.live {
+    display: flex;
+    justify-content: center;
+}
+
+.legenda {
+    text-align: center;
+    font-weight: bold;
 }

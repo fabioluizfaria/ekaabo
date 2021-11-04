@@ -1,0 +1,28 @@
+.img {
+    width: 400px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: inline-block;
+}
+
+.texto {
+    display: inline-block;
+    text-align: justify;
+    font-size: 20px;
+}
+
+h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.div {
+    display: inline-block;
+}
+
+.divMaior {
+    margin-left: 100px;
+    margin-top: 50px;
+}

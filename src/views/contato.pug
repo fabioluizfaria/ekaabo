@@ -5,7 +5,7 @@ block links
  
  
 block principal
-  img.img_capa(src="/publico/imgs/capa_contato.png")
+  img.img_capa(src="/publico/imgs/contato.png")
   br
   br
   h1.titulo Entre em contato com a gente!
@@ -24,12 +24,14 @@ block principal
       legend Qual o tema do contato?
       select.botao
         option Selecione
+        option Comentário
         option Sugestão
         option Relato Pessoal
+        option Contribuição 
+
     br
     label(for="mensagem") Mensagem
     textarea#mensagem(cols="80", rows="10", required)  
     input.enviar(type="submit", value="Enviar formulário")
   br
   br
-      

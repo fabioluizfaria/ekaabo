@@ -1,5 +1,6 @@
 .corpo {
     background-color: #D9BB82;
+    font-family: 'Kaisei HarunoUmi', serif;
 }
 
 .centro {
@@ -13,7 +14,7 @@
 .itens {
     font-size: 20px;
     color: white;
-    font-family: cursive;
+    font-family: 'Kaisei HarunoUmi', serif;
 }
 
 .icone {
@@ -24,14 +25,30 @@
 }
 
 .rodape {
-    font-family: cursive;
+    position: fixed;
+    font-family: 'Kaisei HarunoUmi', serif;
     font-weight: bold;
     background-color: #D9BB82;
-    height: 35px;
+    height: 80px;
     width: 100%;
     font-size: 15px;
     bottom: 0px;
     text-align: center;
-    position: fixed;
     padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgRodape {
+    max-width: 60px;
+}
+
+.item {
+    display: inline;
+    margin: 25px;
+}
+
+.final {
+    margin-bottom: 100px;
 }

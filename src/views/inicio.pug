@@ -1,13 +1,50 @@
 extends layout 
 
 block links
-    link(href='/publico/css/inicio.css' rel='stylesheet')
+  link(href='/publico/css/inicio.css' rel='stylesheet')
 
-block principal 
-    img.img_capa(src="/publico/imgs/capa_C.png")
-    br
-    br
-    h1.titulo Conteúdos disponíveis 
-    br
-    p.texto Oi 
-        
+block principal
+  #carouselExampleIndicators.carousel.slide(data-bs-ride='carousel')
+    .carousel-indicators
+      button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+      button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='/publico/imgs/inicio.png' alt='...')
+      .carousel-item
+        img.d-block.w-100(src='/publico/imgs/frase.png' alt='...')
+    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.visually-hidden Previous
+    button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.visually-hidden Next
+
+  br
+  br
+  h1.titulo Olá, seja bem vinde ao Ekaabo
+  br
+  p.texto Desejamos boas vindas a todas as pessoas que adentraram nosso site, em busca de aprendizado, dando seu apoio ao nosso projeto realizado como Trabalho de Conclusão de Curso no Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul. 
+  br
+  h2.subtitulo O Projeto 
+  p.texto Em referência a Lei N°10.639, Art.26-A que estabelece a obrigatoriedade do ensino da história e cultura afro-brasileira, o projeto é voltado para a criação de uma plataforma na web (site) para disseminação de conteúdos sobre a diversidade cultural e religiosa brasileira, com enfoque nas culturas de matrizes africanas, explorando assuntos que contextualizam a vilanização que essas sofrem constantemente, visando criar um ambiente saudável e acolhedor para o aprendizado e criando um maior sentimento de segurança para ser desenvolvido um estudo sobre as religiões de matrizes africanas, assim como contrapô-las com crenças superestimadas pela sociedade. 
+  br
+  h2.subtitulo O Site 
+  p.texto Estão sendo disponibilizados materiais de estudo, onde visa-se desmistificar e debater alguns dos preconceitos existentes, principalmente em contexto escolar, assim o trabalho servirá como ferramenta de apoio para comunidade escolar no processo de ensino e aprendizagem de um currículo inclusivo e diversificado. Alguns dos temas disponibilizados neste site são: relações entre divindades de diversas origens, as religiões em diversas culturas e a cultura, história e religiões de matrizes africanas. Para o melhor manejo do site, disponibilizamos um documento-guia de utilização, que ensina onde encontrar os itens do site de modo fácil e rápido, otimizando seu tempo e amplificando o aprendizado a partir desta ferramenta.
+  br
+  h2.subtitulo Live: “Religiões de Matrizes Africanas e Escola: Algumas Percepções”
+  p.texto Ao longo do projeto foram desenvolvidas atividades paralelas, com intenção de reunir novos materiais sobre o tema a partir da visão de outras pessoas, e na data de 15 de setembro de 2021, foi realizada uma live, com a Professora Doutora em Letras Vernáculas/ Literatura Brasileira pela UFRJ (Universidade Federal do Rio de Janeiro) Renata de Oliveira Batista Rodrigues com o título “Religiões de Matrizes Africanas e Escola: Algumas Percepções”.
+  br
+  br
+  div.live 
+    iframe.video(width="660", height="415", src="https://www.youtube.com/embed/uArdznI7v5c", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+  p.legenda Live: “Religiões de Matrizes Africanas e Escola: Algumas Percepções”
+  br
+  br
+  p.texto.final Foi com muita dedicação, esforço e carinho que este site foi desenvolvido, bem como as pesquisas realizadas para a reunião de materiais que são disponibilizados no mesmo, esperamos que o mesmo seja de muita utilidade para quem buscá-lo e novamente agradecemos pelo apoio que nos foi dado. Caso desejem saber mais sobre as desenvolvedoras, o orientador, o grupo de pesquisa ou dos artistas, essas informações estarão na aba “Quem Somos” do menu, e caso desejem entrar em contato, há esta possibilidade na aba “Contatos” para que nos dêem sugestões e comentem sobre o que há disponível no site. Até logo.
+
+  br
+  br
+  br
+  br
+

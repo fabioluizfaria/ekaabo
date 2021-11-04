@@ -1,40 +1,47 @@
-table {
-    font-family: cursive;
-    font-size: 20px;
-    margin-left: 10%;
-    margin-bottom: 40px;
+.img_capa {
+    width: 100%;
 }
 
-thead {
-    background-color: #d4b889;
-    font-weight: bold;
-}
-
-td,
-th {
-    border: 1px solid black;
-    padding: 8px 15px;
-}
-
-.item_menuP {
-    margin-left: 40px;
-    margin-bottom: 10px;
-}
-
-.link_menuP {
-    color: black;
-    font-size: 20px;
-    font-family: cursive;
-}
-
-.item_menuP :hover {
-    color: crimson;
-    font-weight: bold;
-}
-
-p {
-    font-size: 20px;
-    font-family: cursive;
-    margin-left: 2%;
+.titulo {
+    font-size: 30px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    text-align: center;
     margin-bottom: 20px;
+}
+
+.grupo {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloCartao {
+    font-weight: bold;
+}
+
+.botao {
+    background-color: #8D2B1D;
+    border-color: #8D2B1D;
+    margin: 10px;
+}
+
+.botao:hover {
+    background-color: #EDAE2A;
+    border-color: #EDAE2A;
+    color: black;
+}
+
+.card {
+    margin-left: 50px;
+    display: inline-block;
+    height: 300px;
+}
+
+.tituloCard {
+    font-weight: bold;
+}
+
+.textoCard {
+    text-align: justify;
 }

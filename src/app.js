@@ -65,7 +65,15 @@ app.get('/tema5', function(req, resp) {
     resp.render('tema5.pug')
 });
 
+//divindades
 
+app.get('/oxum', function(req, resp) {
+    resp.render('oxum.pug')
+});
+
+app.get('/afrodite', function(req, resp) {
+    resp.render('afrodite.pug')
+});
 
 
 

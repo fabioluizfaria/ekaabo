@@ -1,3 +1,7 @@
+.img_capa {
+    width: 100%;
+}
+
 .titulo {
     text-align: center;
     font-size: 40px;
@@ -7,6 +11,10 @@
 h2 {
     font-size: 25px;
     margin: 20px;
+    font-weight: bold;
+}
+
+h5 {
     font-weight: bold;
 }
 
@@ -26,10 +34,14 @@ h2 {
     margin-bottom: 10PX;
 }
 
-.cartao1 {
-    margin-left: 50px;
+.cards {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
 }
 
-.cartao2 {
-    margin-left: 200px;
+.curriculo {
+    font-size: 20px;
+    margin-left: 20px;
 }

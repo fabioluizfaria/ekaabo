@@ -14,38 +14,50 @@ html
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap" rel="stylesheet">
     block links
 
-    title NomeDoSite
+    title Ekaabo
 
 
   body.corpo
+    header 
+      nav.navbar.navbar-expand-lg.navbar-dark.menu(style="background-color: #804831;")
+        .container-fluid.menu-container
+          .col-md-8
+              a
+                img.icone(src='/publico/imgs/logo.png').icone
+              a.navbar-brand(href="#") Ekaabo
+                button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+                    span.navbar-toggler-icon
+          .collapse.navbar-collapse.col-6.col-md-4#navbarNav
+            ul.navbar-nav
+              li.nav-item.itens
+                a.nav-link.active(aria-current="page " href="/inicio") Início
+              li.nav-item.itens
+                a.nav-link.active(href="/quemSomos") Quem Somos
+              li.nav-item.itens
+                a.nav-link.active(href="/conteudos") Conteúdos
+              li.nav-item.itens
+                a.nav-link.active(href="/contato") Contato  
 
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light
-      .container-fluid.menu-container
-        .col-md-8
-            a
-              img.icone(src='/publico/imgs/logo.png').icone
-            a.navbar-brand(href="#") NomeDoSite
-              button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
-                  span.navbar-toggler-icon
-        .collapse.navbar-collapse.col-6.col-md-4#navbarNav
-          ul.navbar-nav
-            li.nav-item.itens
-              a.nav-link.active(aria-current="page " href="/inicio") Início
-            li.nav-item.itens
-              a.nav-link.active(href="/quemSomos") Quem Somos
-            li.nav-item.itens
-              a.nav-link.active(href="/conteudos") Conteúdos
-            li.nav-item.itens
-              a.nav-link.active(href="/contato") Contato  
 
+    div.centro
+      main 
+        block principal
 
-
-  div.centro
-    main 
-      block principal
-
-  footer.rodape
-    |&copy; Giulia Sovernigo, Luanne Delovo
+    footer.rodape
+      div
+        li.item
+          img.imgRodape(src='/publico/imgs/logoNEABI.png', alt="...")
+          a(href="#")
+        li.item 
+          img.imgRodape(src='/publico/imgs/logoNEABI.png', alt="...")
+          a(href="#")
+        li.item 
+          img.imgRodape(src='/publico/imgs/logoNEABI.png', alt="...")
+          a(href="#")
+        li.item 
+          img.imgRodape(src='/publico/imgs/logoNEABI.png', alt="...")
+          a(href="#")
+         
 
 
 
