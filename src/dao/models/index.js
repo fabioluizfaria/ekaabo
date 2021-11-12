@@ -12,7 +12,7 @@ const db = {};
  * CONEXÃO COM HEROKU
  */
 const Sequelize = require('sequelize');
-let sequelize = new Sequelize(process.env.DATABASE_URL, {
+let sequelize = new Sequelize(process.env.DATABASE_URL, { 
     dialectOptions: {
       ssl: {
         require: true,
