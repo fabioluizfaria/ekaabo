@@ -10,6 +10,7 @@ app.use('/jquery', express.static('./node_modules/jquery/dist'))
 app.use('/popperjs', express.static('./node_modules/@popperjs/core/dist/umd'))
 app.use('/publico', express.static(__dirname + '/publico'))
 
+
 /* Config páginas */
 
 app.set('views', path.join(__dirname, 'views'));
@@ -68,11 +69,11 @@ app.get('/tema5', function(req, resp) {
 //divindades
 
 app.get('/oxum', function(req, resp) {
-    resp.render('oxum.pug')
+    resp.render(__dirname + '/views/divindades/oxum.pug')
 });
 
 app.get('/afrodite', function(req, resp) {
-    resp.render('afrodite.pug')
+    resp.render(__dirname + '/views/divindades/afrodite.pug')
 });
 
 
