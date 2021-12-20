@@ -11,7 +11,7 @@ block principal
   h1.titulo Estudantes
   br
   div.cartoes
-    .card.mb-3.cards(style="width: 1150px;")
+    .card.mb-3.cards(style="max-width: 1150px;")
       .row.g-0
         .col-md-4
           img.img-fluid.rounded-start(src='/publico/imgs/giulia.jpg', alt="...")
@@ -19,16 +19,13 @@ block principal
           .card-body
             h5.card-title Giulia de Sousa Sovernigo
             p.card-text.texto Com 18 anos, atualmente está no último semestre do ensino médio com curso integrado em informática no Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul, campus Campo Grande. Desde pequena se interessa em estudar diversas culturas, então ao ouvir a proposta do projeto se entusiasmou, por ser uma oportunidade de estudar mais sobre. Em seu tempo livre gosta de escrever poesia, cantar, ouvir música, ler livros, quadrinhos e mangás, jogar RPG, ver filmes e séries de suspense, terror e animação e pesquisar sobre pinguins. Gosta de ler sobre o ativismo LGBT e tem interesse em fazer parte de um coletivo no futuro, devido seu gosto pelos estudos sociais. 
-            p.card-text
-              small.text-muted.curriculo Currículo
     br
-    .card.mb-3.cards(style="width: 1150px;")
+    .card.mb-3.cards(style="max-width: 1150px;")
       .row.g-0
         .col-md-8
           .card-body
             h5.card-title Luanne Delovo de Ferreira Santos
             p.card-text.texto Com 18 anos, atualmente está no último semestre do ensino médio com curso integrado em informática no Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul, campus Campo Grande. Se interessou pelo projeto proposto pelo professor Fábio Luiz Faria da Silva por ser umbandista e gostar de estudar as religiões de matrizes africanas. No seu tempo livre, gosta de ler livros de suspense e romance, assistir filmes antigos e séries distópicas. Além disso, gosta de tocar seu ukulele e tem uma grande conexão com a música.
-            small.text-muted.curriculo Currículo
         .col-md-4
           img.img-fluid.rounded-start(src='/publico/imgs/luanne.jpg', alt="...")
 
@@ -38,25 +35,26 @@ block principal
   h1.titulo  Professores Orientadores
   br
   div.cartoes
-    .card.mb-3.cards(style="width: 1150px;")
+    .card.mb-3.cards(style="max-width: 1150px;")
       .row.g-0
         .col-md-4
           img.img-fluid.rounded-start(src='/publico/imgs/fabio.gif', alt="...")
         .col-md-8
           .card-body
             h5.card-title Fabio Luiz Faria da Silva 
-            p.card-text.texto Fabio Luiz Faria da Silva, atualmente professor do Instituto Federal do Mato Grosso do Sul campus Campo Grande, para o curso de informática. Possui graduação em Engenharia da Computação - Faculdades Associadas de São Paulo (2006), especialização pela FACEL em Docência em Ciência e Tecnologia da Informação (2018) e especialização pela FIAR em Licenciatura Pedagógica em História.
-            p.card-text
-              small.text-muted.curriculo Currículo
+            p.card-text.texto Fábio Luiz Faria da Silva (Fábio), possui graduação em Engenharia da Computação, especialização em Docência e Licenciatura Pedagógica em História. Atualmente é professor efetivo no IFMS na área de Desenvolvimento/Desenvolvimento Web e membro do NEABI. É ativista em movimentos sociais e amante das artes, em especial, a música.
+            a.link(href="https://www.ifms.edu.br/assuntos/extensao/inclusao-e-diversidade/estudos-afro-brasileiros-e-indigenas/nucleo-de-estudos-neabi",  target="blank")
+              p.card-text
+                small.text-muted.curriculo Currículo
+                
     br
     br
-
-
   br
   h1.titulo Artistas
   br
-  div.cartoes
-    .card.mb-3.cards(style="width: 1150px;")
+
+  //-div.cartoes
+    .card.mb-3.cards(style="max-width: 1150px;")
       .row.g-0
         .col-md-8
           .card-body
@@ -66,7 +64,7 @@ block principal
         .col-md-4
           img.img-fluid.rounded-start(src='/publico/imgs/luanne.jpg', alt="...")
     br
-    .card.mb-3.cards(style="width: 1150px;")
+    .card.mb-3.cards(style="max-width: 1150px;")
       .row.g-0
         .col-md-4
           img.img-fluid.rounded-start(src='/publico/imgs/giulia.jpg', alt="...")
@@ -82,12 +80,15 @@ block principal
   h1.titulo Núcleos de Estudo
   br
   div.cartoes
-    .card.mb-3.cards(style="width: 1150px;")
+    .card.mb-3.cards(style="max-width: 1150px;")
       .row.g-0
         .col-md-8
           .card-body
             h5.card-title NEABI
             p.card-text.texto  De natureza propositiva e consultiva, o Núcleo de Estudos Afro-Brasileiros e Indígenas (NEABI) tem a função de auxiliar no direcionamento de estudos, pesquisas e ações de extensão que promovam a reflexão sobre as questões étnico-raciais. Em cada campus, o Neabi é formado por um coordenador, um coordenador adjunto e um secretário, todos com mandato de dois anos.
+            a(href="https://www.ifms.edu.br/assuntos/extensao/inclusao-e-diversidade/estudos-afro-brasileiros-e-indigenas/nucleo-de-estudos-neabi",  target="blank")
+              p.card-text
+                small.text-muted.curriculo NEABI
         .col-md-4
           img.img-fluid.rounded-start(src='/publico/imgs/logoNEABI.png', alt="...")
 

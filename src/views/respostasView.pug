@@ -1,0 +1,52 @@
+html 
+
+head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    link(rel="stylesheet" href="/bscss/bootstrap.css")
+    script(src="/jquery/jquery.min.js") 
+    script(src="/popperjs/popper.min.js") 
+    script(src="/bsjs/bootstrap.min.js")
+    script(src="/publico/js/cookie.js")
+    script(src="/publico/js/respostas.js")
+    script(src="/publico/js/logout.js")
+
+    link(rel="stylesheet" href="/publico/css/respostas.css")
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap" rel="stylesheet">
+    
+    title Ekaabo
+
+body.corpo
+    div.centro
+        main 
+            a.btn.btn-primary.botao(href="#", onClick="logout()" ) Sair
+            //-a.link#sair(href="#", onClick="logout()") Sair
+            br  
+            h1.titulo Dúvidas e Respostas
+            if todasAsDuvidas 
+                each linha in todasAsDuvidas
+                    div.linha
+                        p.texto Nome: 
+                        #msg.item= `${linha.nome}`
+                        br
+                        p.texto Pergunta: 
+                        #msg.item= `${linha.pergunta}`
+                        form(id=`${linha.id}` name=`${linha.id}`)
+                            label(for="resposta") Resposta
+                            textarea#resposta(cols="80", rows="10", required, name="resposta")=`${linha.resposta}`
+                            div.checkbox
+                                if linha.publicar
+                                    input.item.check(type="checkbox", name="publicar", id="publicar" checked)
+                                else 
+                                    input.item.check(type="checkbox", name="publicar", id="publicar")
+                                label.texto(for="publicar") publicar 
+                            input.enviar(type="button", value="Atualizar" onClick=`submitForm(${linha.id})`)
+                            span(id=`msgResp${linha.id}`)
+        
+
+
+
+    
+

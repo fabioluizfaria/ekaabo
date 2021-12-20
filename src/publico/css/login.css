@@ -1,0 +1,44 @@
+.corpo {
+    background-color: #D9BB82;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+.centro {
+    background-color: white;
+    font-family: 'Kaisei HarunoUmi', serif;
+    margin: 190 500 190 500px;
+}
+
+.titulo {
+    font-size: 25px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.texto {
+    display: block;
+    margin: auto;
+}
+
+.input {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+form label {
+    padding-bottom: 10px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 40px;
+}
+
+.enviar {
+    display: block;
+    margin: auto;
+    background-color: #EDAE2A;
+    border: none;
+    color: black;
+}

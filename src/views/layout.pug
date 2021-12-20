@@ -24,13 +24,11 @@ html
           .col-md-6
               a
                 img.icone(src='/publico/imgs/logo.png').icone
-              a.navbar-brand(href="#") Ekaabo
+              a.navbar-brand(href="/inicio") Ekaabo
                 button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
                     span.navbar-toggler-icon
           .collapse.navbar-collapse.col-6.col-md-4#navbarNav
             ul.navbar-nav
-              li.nav-item.itens
-                a.nav-link.active(aria-current="page " href="/inicio") Início
               li.nav-item.itens
                 a.nav-link.active(href="/quemSomos") Quem Somos
               li.nav-item.itens
@@ -40,27 +38,18 @@ html
               li.nav-item.itens
                 a.nav-link.active(href="/referencial") Referencial
 
-
-
     div.centro
       main 
         block principal
 
     footer.rodape
       div
+        li.item 
+          a(href="https://www.ifms.edu.br/",  target="blank")
+            img.imgRodape(src='/publico/imgs/ifms.jpg', alt="...") 
         li.item
-          img.imgRodape(src='/publico/imgs/logoNEABI.png', alt="...")
-          a(href="#")
-        li.item 
-          img.imgRodape(src='/publico/imgs/logoNEABI.png', alt="...")
-          a(href="#")
-        li.item 
-          img.imgRodape(src='/publico/imgs/logoNEABI.png', alt="...")
-          a(href="#")
-        li.item 
-          img.imgRodape(src='/publico/imgs/logoNEABI.png', alt="...")
-          a(href="#")
+          a(href="https://www.ifms.edu.br/assuntos/extensao/inclusao-e-diversidade/estudos-afro-brasileiros-e-indigenas/nucleo-de-estudos-neabi",  target="blank")
+            img.imgRodape(src='/publico/imgs/logoNEABI.png', alt="...")
+
+
          
-
-
-

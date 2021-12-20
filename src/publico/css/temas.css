@@ -18,3 +18,17 @@
     margin-left: 80px;
     margin-right: 80px;
 }
+
+.live {
+    display: flex;
+    justify-content: center;
+}
+
+.legenda {
+    text-align: center;
+    font-weight: bold;
+}
+
+.video {
+    width: 50%;
+}

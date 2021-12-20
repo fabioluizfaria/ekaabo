@@ -2,6 +2,7 @@ extends layout
  
 block links
   link(href='/publico/css/contato.css' rel='stylesheet')
+  script(src="/publico/js/contato.js")
  
  
 block principal
@@ -10,14 +11,39 @@ block principal
   br
   h1.titulo Deixe sua pergunta!
   br
-  form
+  
+  if mensagemOK 
+    //-#msg= `${mensagemOK}`
+    #modalMsgRetorno.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            h5#exampleModalLabel.modal-title Mensagem
+            button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+          .modal-body= `${mensagemOK}`
+          .modal-footer
+
+
+  form(action="/duvidas" method="POST")
     label(for="NomeCompleto") Nome Completo
-    input.input#nome(type="text", required)
+    input.input#nome(type="text", name="nome", required)
     label(for="email") Email
-    input.input#email(type="email", required, placeholder="seuemail@dominio.com")
+    input.input#email(type="email", name="email", required, placeholder="seuemail@dominio.com")
     br
-    label(for="mensagem") Pergunta
-    textarea#mensagem(cols="80", rows="10", required)  
-    input.enviar(type="submit", value="Enviar formulário")
+    label(for="pergunta") Pergunta
+    textarea#pergunta(cols="80", rows="10", required, name="pergunta")  
+    input.enviar(type="submit", value="Enviar")
   br
+  h1.titulo Algumas dúvidas já respondidas
   br
+  if respostas 
+    each linha in respostas
+      div.linha
+        p.textoPer Pergunta: 
+          #msg.item= `${linha.pergunta}`
+        p.textoPer Resposta: 
+          #msg.item= `${linha.resposta}`
+  br
+  p.final
+  br
+

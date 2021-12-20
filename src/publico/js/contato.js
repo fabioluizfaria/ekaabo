@@ -1,0 +1,3 @@
+$(function() {
+    $('#modalMsgRetorno').modal('show');
+})

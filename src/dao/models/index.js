@@ -2,34 +2,11 @@
 
 const fs = require('fs');
 const path = require('path');
+const Sequelize = require('sequelize');
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
-
-
-/**
- * CONEXÃO COM HEROKU
- */
-const Sequelize = require('sequelize');
-let sequelize = new Sequelize(process.env.DATABASE_URL, { 
-    dialectOptions: {
-      ssl: {
-        require: true,
-        rejectUnauthorized: false
-      }
-    }
-  }
-);
-
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log('Connection has been established successfully.');
-  })
-  .catch(err => {
-    console.error('Unable to connect to the database:', err);
-  });
 
 /* let sequelize;
 if (config.use_env_variable) {
@@ -37,6 +14,19 @@ if (config.use_env_variable) {
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 } */
+
+/**
+ * CONEXÃO COM HEROKU
+ */
+ let sequelize = new Sequelize(process.env.DATABASE_URL, { 
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false
+    }
+  }
+}
+);
 
 fs
   .readdirSync(__dirname)
