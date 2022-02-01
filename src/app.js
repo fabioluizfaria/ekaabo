@@ -145,6 +145,13 @@ app.get('/zeus', function(req, resp) {
     resp.render(__dirname + '/views/divindades/zeus.pug')
 });
 
+app.get('/oxossi', function(req, resp) {
+    resp.render(__dirname + '/views/divindades/oxossi.pug')
+});
+
+app.get('/artemis', function(req, resp) {
+    resp.render(__dirname + '/views/divindades/artemis.pug')
+});
 
 app.get('/respostas', function(req, resp) {
     resp.sendFile(__dirname + '/views/middlewareRespostas.html');
