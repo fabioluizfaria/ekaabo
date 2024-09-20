@@ -8,17 +8,17 @@ const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
 
-/* let sequelize;
+let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
-} */
+}
 
 /**
  * CONEXÃO COM HEROKU
  */
- let sequelize = new Sequelize(process.env.DATABASE_URL, { 
+ /*let sequelize = new Sequelize(process.env.DATABASE_URL, { 
   dialectOptions: {
     ssl: {
       require: true,
@@ -26,7 +26,7 @@ if (config.use_env_variable) {
     }
   }
 }
-);
+);*/
 
 fs
   .readdirSync(__dirname)
