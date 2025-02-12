@@ -1,0 +1,46 @@
+.img_capa {
+    width: 100%;
+}
+
+.titulo {
+    font-size: 30px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grupo {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloCartao {
+    font-weight: bold;
+}
+
+.botao {
+    background-color: #8D2B1D;
+    border-color: #8D2B1D;
+    margin: 10px;
+}
+
+.botao:hover {
+    background-color: #EDAE2A;
+    border-color: #EDAE2A;
+    color: black;
+}
+
+.card {
+    display: inline-block;
+    margin: 10px;
+}
+
+.tituloCard {
+    font-weight: bold;
+}
+
+.textoCard {
+    text-align: justify;
+}
